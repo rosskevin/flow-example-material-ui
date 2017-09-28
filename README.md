@@ -1,6 +1,9 @@
 # flow-example-material-ui
 
-[![CircleCI](https://circleci.com/gh/rosskevin/flow-example-material-ui/tree/master.svg?style=svg&circle-token=9de60bf76b13f269bb560cd89ea253c9c04238ce)](https://circleci.com/gh/rosskevin/flow-example-material-ui/tree/master)
+[![CircleCI](https://circleci.com/gh/rosskevin/flow-example-material-ui/tree/master.svg?style=svg&circle-token=5f5e59c1541acc06d6e3cb249f6e7b1a3c84f146)](https://circleci.com/gh/rosskevin/flow-example-material-ui/tree/master)
+
+## Note
+This code is included in `material-ui/examples/create-react-app-with-flow`.  It's only here as a canary to make sure everyting builds.
 
 ## How to use
 

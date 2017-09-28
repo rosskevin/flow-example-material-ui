@@ -8,8 +8,8 @@
 .*/node_modules/kefir
 .*/node_modules/react-event-listener/src
 
-; Uncomment this ignore if you do not use enzyme.
-;.*/node_modules/material-ui/test-utils
+; Comment this line if you do not use enzyme.
+.*/node_modules/material-ui/test-utils
 
 ; flow 55
 ; FIXME: we should be flow checking against jss
