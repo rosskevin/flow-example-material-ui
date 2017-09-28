@@ -4,9 +4,6 @@ jobs:
     docker:
       - image: alienfast/ci-ruby:2.0.5
     working_directory: ~/flow-example-material-ui
-    branches:
-      ignore:
-        - master
     steps:
       - checkout
       - add_ssh_keys
