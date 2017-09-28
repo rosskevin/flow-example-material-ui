@@ -1,4 +1,4 @@
-/* eslint-disable flowtype/require-valid-file-annotation */
+// @flow
 
 import { create } from 'jss';
 import preset from 'jss-preset-default';
@@ -18,7 +18,7 @@ const theme = createMuiTheme({
 const jss = create(preset());
 jss.options.createGenerateClassName = createGenerateClassName;
 
-export const sheetsManager = new Map();
+export const sheetsManager: Map<*, *> = new Map();
 
 export default function createContext() {
   return {

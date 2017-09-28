@@ -1,10 +1,11 @@
-/* eslint-disable flowtype/require-valid-file-annotation */
+// @flow
 
 import React, { Component } from 'react';
 import JssProvider from 'react-jss/lib/JssProvider';
 import { withStyles, MuiThemeProvider } from 'material-ui/styles';
 import wrapDisplayName from 'recompose/wrapDisplayName';
 import createContext from '../styles/createContext';
+import type { ComponentType } from 'react';
 
 // Apply some reset
 const styles = theme => ({
@@ -26,8 +27,8 @@ AppWrapper = withStyles(styles)(AppWrapper);
 
 const context = createContext();
 
-function withRoot(BaseComponent) {
-  class WithRoot extends Component {
+function withRoot(BaseComponent: ComponentType<*>) {
+  class WithRoot extends Component<{}> {
     componentDidMount() {
       // Remove the server-side injected CSS.
       const jssStyles = document.querySelector('#jss-server-side');

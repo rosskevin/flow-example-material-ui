@@ -1,7 +1,6 @@
-/* eslint-disable flowtype/require-valid-file-annotation */
+// @flow
 
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import Button from 'material-ui/Button';
 import Dialog, {
   DialogTitle,
@@ -20,7 +19,17 @@ const styles = {
   },
 };
 
-class Index extends Component {
+type DefaultProps = {
+  classes: Object,
+};
+
+export type Props = {};
+
+type State = {
+  open: boolean,
+}
+
+class Index extends Component<DefaultProps & Props, State> {
   state = {
     open: false,
   };
@@ -64,9 +73,5 @@ class Index extends Component {
     );
   }
 }
-
-Index.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
 
 export default withRoot(withStyles(styles)(Index));
