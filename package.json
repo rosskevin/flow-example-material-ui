@@ -23,6 +23,6 @@
   },
   "devDependencies": {
     "enzyme": "^3.0.0",
-    "flow-bin": "^0.55.0"
+    "flow-bin": "^0.56.0"
   }
 }
