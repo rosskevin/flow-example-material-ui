@@ -27,7 +27,7 @@ export type Props = {};
 
 type State = {
   open: boolean,
-}
+};
 
 class Index extends Component<DefaultProps & Props, State> {
   state = {
