@@ -1,0 +1,21 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: alienfast/ci-ruby:2.0.5
+    working_directory: ~/flow-example-material-ui
+    branches:
+      ignore:
+        - master
+    steps:
+      - checkout
+      - add_ssh_keys
+      - restore_cache:
+          key: yarn-all-branches
+      - run: yarn install
+      - run: yarn test
+      - save_cache:
+          key: yarn-all-branches-{{ epoch }}
+          paths:
+            - "~/.cache/yarn/v1"
+            - .eslintcache
